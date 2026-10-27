@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ФинРевизор — защита сбережений от финансовых пирамид и поддельных инвестиций</title>
+<meta name="description" content="Сайт-памятка по консультации населения: защита сбережений граждан от финансовых пирамид и поддельных инвестиционных платформ. Консультант — Зяблецев Владислав Андреевич, группа 25П-1.">
+<meta name="author" content="Зяблецев Владислав Андреевич">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d5c4a'/%3E%3Ccircle cx='14' cy='14' r='7' fill='none' stroke='%23c98a3d' stroke-width='2.6'/%3E%3Cpath d='M19 19l6 6' stroke='%23c98a3d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= ИКОНКИ ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10.5" cy="10.5" r="6.5" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke-width="2.6"/><path d="M8 10.5h5M10.5 8v5" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21h18M6 17V9M11 17V5M16 17v-6M21 17V8"/>
+    </symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v10M15.5 9.5c-.7-1-2-1.5-3.5-1.5-1.9 0-3.2 1-3.2 2.4 0 3.2 6.6 1.6 6.6 4.6 0 1.5-1.4 2.5-3.4 2.5-1.6 0-3-.6-3.7-1.7"/>
+    </symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/><path d="M12 9v4M12 17h.01"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6L9 17l-5-5"/>
+    </symbol>
+    <symbol id="i-call" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/>
+    </symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21h18M4 10v8M9 10v8M15 10v8M20 10v8M2 10h20L12 3 2 10z"/>
+    </symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/>
+    </symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.9"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+    </symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 6 10-6"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/>
+    </symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7L12 19"/>
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h.01M15 8h.01M9 12h.01M15 12h.01M10 21v-4h4v4"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/>
+    </symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 9l6 6 6-6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= ШАПКА ================= -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top">
+      <span class="logo__mark"><svg><use href="#i-logo"/></svg></span>
+      <span class="logo__text">
+        <span class="logo__name">ФинРевизор</span>
+        <span class="logo__sub">проверяй, прежде чем вкладывать</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">О проекте</a>
+      <a href="#scheme">Схема пирамиды</a>
+      <a href="#flags">Красные флаги</a>
+      <a href="#protect">Консультация №1</a>
+      <a href="#incident">Консультация №2</a>
+    </nav>
+
+    <div class="header__cta">
+      <a class="btn btn--accent btn--sm" href="#consult">Записаться на консультацию</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ПЕРВЫЙ ЭКРАН ================= -->
+<section class="hero" id="top">
+  <div class="container hero__grid">
+    <div>
+      <div class="hero__badge"><b>МиТПК</b> 09.02.07 «Информационные системы и программирование» · группа 25П-1</div>
+      <h1>Защита сбережений от финансовых пирамид и <span>поддельных инвестиций</span></h1>
+      <p class="hero__lead">
+        Две бесплатные консультации: как распознать пирамиду и поддельного «брокера»
+        до того, как переведены деньги, и что делать, если перевод уже сделан.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#protect">Консультация №1 — проверка</a>
+        <a class="btn btn--ghost" href="#incident">Консультация №2 — если уже перевели</a>
+      </div>
+      <div class="hero__facts">
+        <div>
+          <div class="fact__num">2</div>
+          <div class="fact__text">тематические консультации</div>
+        </div>
+        <div>
+          <div class="fact__num">8</div>
+          <div class="fact__text">правил в чек-листе</div>
+        </div>
+        <div>
+          <div class="fact__num">0 ₽</div>
+          <div class="fact__text">консультация бесплатна</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 520 420" role="img">
+        <defs>
+          <linearGradient id="gPine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2a7a63"/><stop offset="100%" stop-color="#11352b"/>
+          </linearGradient>
+          <linearGradient id="gPhone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f0f3ef"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="26" y="24" width="468" height="372" rx="64" fill="#e7f0ec"/>
+        <circle cx="446" cy="86" r="44" fill="#b3762e" opacity=".22"/>
+        <circle cx="72" cy="350" r="38" fill="#1d5c4a" opacity=".16"/>
+        <circle cx="90" cy="88" r="20" fill="#a8433a" opacity=".14"/>
+
+        <!-- телефон с «инвестплатформой» -->
+        <g transform="rotate(-5 220 210)">
+          <rect x="130" y="70" width="180" height="300" rx="28" fill="url(#gPhone)" stroke="#d9e2dc" stroke-width="2"/>
+          <rect x="196" y="82" width="48" height="8" rx="4" fill="#d9e2dc"/>
+          <!-- шапка приложения -->
+          <rect x="150" y="104" width="140" height="30" rx="9" fill="#1d5c4a"/>
+          <rect x="160" y="115" width="86" height="9" rx="4.5" fill="#ffffff" opacity=".85"/>
+          <rect x="252" y="112" width="30" height="14" rx="7" fill="#a8433a"/>
+          <!-- график -->
+          <rect x="150" y="146" width="140" height="86" rx="10" fill="#f2f5f1" stroke="#dfe6e1"/>
+          <polyline points="160,214 184,200 206,206 230,182 252,186 278,160" fill="none" stroke="#2a7a63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="278" cy="160" r="4.5" fill="#b3762e"/>
+          <!-- кнопка вложить -->
+          <rect x="150" y="244" width="140" height="34" rx="10" fill="#b3762e"/>
+          <rect x="192" y="257" width="56" height="9" rx="4.5" fill="#ffffff" opacity=".9"/>
+          <rect x="150" y="290" width="104" height="8" rx="4" fill="#d3dcd5"/>
+          <rect x="150" y="306" width="76" height="8" rx="4" fill="#d3dcd5"/>
+        </g>
+
+        <!-- лупа-ревизор -->
+        <g transform="translate(318 190)">
+          <circle cx="76" cy="76" r="74" fill="#ffffff" opacity=".97"/>
+          <circle cx="76" cy="66" r="38" fill="none" stroke="#1d5c4a" stroke-width="9"/>
+          <path d="M104 96l30 30" stroke="#1d5c4a" stroke-width="12" stroke-linecap="round"/>
+          <path d="M76 48v22" stroke="#a8433a" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="76" cy="80" r="4" fill="#a8433a"/>
+        </g>
+
+        <!-- чип «гарантия доходности — обман» -->
+        <g transform="translate(52 306)">
+          <rect x="0" y="0" width="168" height="40" rx="20" fill="#f8eceb" stroke="#a8433a" stroke-width="2"/>
+          <circle cx="22" cy="20" r="9" fill="#a8433a"/>
+          <path d="M18.5 16.5l7 7M25.5 16.5l-7 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <rect x="38" y="16" width="112" height="8" rx="4" fill="#c98a86"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КАК РАБОТАЕТ ПИРАМИДА ================= -->
+<section class="section section--tint" id="scheme">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Схема обмана</span>
+      <h2>Как работает финансовая пирамида</h2>
+      <p class="lead">Схема почти всегда одинаковая. Зная четыре её шага, вы узнаете пирамиду раньше, чем она узнает ваш номер карты.</p>
+    </div>
+
+    <div class="grid-4">
+      <article class="card">
+        <div class="card__icon icon-pine"><svg><use href="#i-chart"/></svg></div>
+        <h3>Приманка</h3>
+        <p>Обещание лёгкого дохода: «30% в месяц», «сигналы проверенных трейдеров», «закрытый клуб инвесторов». Реклама — в соцсетях и через знакомых.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon icon-copper"><svg><use href="#i-coin"/></svg></div>
+        <h3>Первые выплаты</h3>
+        <p>Небольшие «доходы» действительно приходят — но из денег новых участников. Так жертва доверяет и несёт уже крупную сумму.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon icon-pine"><svg><use href="#i-users"/></svg></div>
+        <h3>Приведи друга</h3>
+        <p>Бонусы за приглашённых превращают жертв в рекламу. В чатах — «успешные кейсы», на сомнения — давление и запрет на критику.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon icon-red"><svg><use href="#i-x"/></svg></div>
+        <h3>Обвал</h3>
+        <p>Вывод денег «на техобслуживании», сайт не открывается, «поддержка» исчезает. Организации в реестре ЦБ, скорее всего, никогда не было.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КРАСНЫЕ ФЛАГИ ================= -->
+<section class="section" id="flags">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Проверка за минуту</span>
+      <h2>Шесть красных флагов поддельных инвестиций</h2>
+      <p class="lead">Достаточно одного флага, чтобы отказаться от перевода денег и проверить компанию по официальным источникам.</p>
+    </div>
+
+    <div class="flags">
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Гарантированная доходность</b><span>«От 30% в месяц без рисков» — гарантии в инвестициях не даёт никто, кроме мошенников.</span></div></div>
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Нет лицензии Банка России</b><span>Брокеры и управляющие обязаны быть в реестре ЦБ. Нет в реестре — нет компании.</span></div></div>
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Деньги — на карту физлицу или в крипту</b><span>Легальные компании принимают платежи только на расчётный счёт организации.</span></div></div>
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Бонус за приведённого друга</b><span>Реферальная схема — двигатель пирамиды: платят не с прибыли, а из новых взносов.</span></div></div>
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Давление и срочность</b><span>«Осталось два места», «окно закрывается через час» — спешка отключает критическое мышление.</span></div></div>
+      <div class="flag-item"><span class="flag-item__icon"><svg><use href="#i-flag"/></svg></span><div><b>Компания в «списке предупреждений» ЦБ</b><span>Банк России публикует список компаний с признаками нелегальной деятельности — проверьте перед переводом.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= О ПРОЕКТЕ ================= -->
+<section class="section section--tint" id="about">
+  <div class="container about">
+    <div class="about__text">
+      <span class="eyebrow">О проекте</span>
+      <h2>Кто консультирует и как построена встреча</h2>
+      <p>
+        Консультации проводятся в рамках учебной практики по дисциплине
+        <b>МиТПК</b> (методика и технология профессионального консультирования).
+        Тема — <b>«Защита сбережений граждан от финансовых пирамид
+        и поддельных инвестиционных платформ»</b>.
+      </p>
+      <p>
+        Разбираем реальные объявления и «инвестплатформы» из соцсетей,
+        учимся проверять компании по официальным реестрам и составляем
+        личный план действий на случай, если перевод уже сделан.
+      </p>
+      <ul class="about__list">
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Очно или дистанционно — в удобном для вас формате.</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Разбор конкретных предложений, которые вы присылаете заранее.</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Печатная памятка-чек-лист останется у вас дома.</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span> Контакты экстренной помощи — на визитке и на сайте.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Как проходит консультация</h3>
+      <p style="margin-bottom:18px">Два тематических разговора — по 30–40 минут каждый.</p>
+      <ol class="steps-list">
+        <li><div><b>Знакомство и ситуация</b><span>Что вам предлагали, где увидели, сколько просят на «вход».</span></div></li>
+        <li><div><b>Проверка компании</b><span>Вместе ищем организацию в реестрах и списке предупреждений ЦБ.</span></div></li>
+        <li><div><b>Разбор флагов</b><span>Считаем красные флаги предложения и решаем: переводить или нет.</span></div></li>
+        <li><div><b>План на случай инцидента</b><span>Вы получаете памятку: шесть шагов и адреса, куда обращаться.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНСУЛЬТАЦИЯ №1 ================= -->
+<section class="section" id="protect">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Консультация №1</span>
+      <h2>Как распознать финансовую пирамиду и поддельного «брокера»</h2>
+      <p class="lead">Проверка занимает десять минут и экономит накопления. Главный инструмент — официальные реестры Банка России.</p>
+    </div>
+
+    <article class="feature">
+      <div class="feature__top">
+        <span class="feature__num">1</span>
+        <div>
+          <h3>Профилактика: проверяем, прежде чем вкладывать</h3>
+          <p>Легальную компанию видно по документам: лицензия, расчётный счёт, реальная регистрация.</p>
+        </div>
+      </div>
+      <div class="feature__body">
+        <div class="feature__block">
+          <h4>Что разберём</h4>
+          <ul>
+            <li>Реестры Банка России: как найти брокера или управляющую компанию и как читать «список предупреждений».</li>
+            <li>Признаки пирамиды: гарантированный процент, реферальные бонусы, «закрытые клубы» и сигналы трейдеров.</li>
+            <li>Поддельные платформы: клонированные сайты известных брокеров и фейковые приложения.</li>
+            <li>Психологическое давление: почему «окно закрывается через час» — это приём, а не факт.</li>
+          </ul>
+        </div>
+        <div class="feature__block">
+          <h4>Практические советы</h4>
+          <ul>
+            <li>Проверяйте компанию на cbr.ru до перевода денег, а не после.</li>
+            <li>Не переводите деньги на карты физических лиц и в криптокошельки «для входа».</li>
+            <li>Сомнительное предложение сохраните и покажите близким — свежий взгляд видит флаги быстрее.</li>
+            <li>Начинайте только с лицензированных организаций и с сумм, потерю которых переживёте спокойно.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="feature__note"><b>Запомните:</b> гарантированная высокая доходность — главный признак пирамиды. Рынок не гарантирует прибыль, гарантирует её только мошенник.</p>
+    </article>
+
+    <!-- Проверка доходности -->
+    <div class="pw">
+      <div class="pw__head">
+        <div class="card__icon icon-copper"><svg><use href="#i-chart"/></svg></div>
+        <div>
+          <h3>Мини-проверка: реальна ли обещанная доходность</h3>
+          <p>Введите процент, который обещают за месяц, — проверка идёт прямо в браузере, никуда не отправляется.</p>
+        </div>
+      </div>
+      <div class="pw__row">
+        <input id="rate-input" type="number" min="0" step="0.5" placeholder="Например: 30 (% в месяц)">
+        <div class="pw__meter"><span id="rate-bar"></span></div>
+      </div>
+      <div class="pw__verdict" id="rate-verdict">Введите обещанный процент</div>
+      <ul class="pw__rules" id="rate-rules">
+        <li data-ok="0">До 1,5% в месяц — уровень вкладов и облигаций</li>
+        <li data-ok="0">1,5–4% в месяц — очень высокий риск</li>
+        <li data-ok="0">Выше 4% в месяц — признак пирамиды</li>
+        <li data-ok="0">Слово «гарантированно» — всегда обман</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНСУЛЬТАЦИЯ №2 ================= -->
+<section class="section section--tint" id="incident">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Консультация №2</span>
+      <h2>Что делать, если деньги уже переведены мошенникам</h2>
+      <p class="lead">Ситуация неприятная, но управляемая. Действуйте по порядку — и не «докладывайте» деньги в надежде всё вернуть.</p>
+    </div>
+
+    <div class="alert">
+      <div class="alert__icon"><svg><use href="#i-alert"/></svg></div>
+      <div>
+        <h3>Вы не виноваты в произошедшем</h3>
+        <p>Схемы отработаны профессионалами и рассчитаны на доверчивость, а не на глупость. Пострадавшие не «сами виноваты» — обращайтесь за помощью спокойно и уверенно.</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step tl-step--urgent">
+        <b>Прекратите переводы</b>
+        <span>Никаких «докладов» за вывод, налогов и комиссий вперёд. Это вторая волна обмана — так теряют ещё больше.</span>
+      </div>
+      <div class="tl-step">
+        <b>Сохраните доказательства</b>
+        <span>Скриншоты сайта и переписки, чеки, реквизиты получателя, названия и ссылки — всё понадобится для заявления.</span>
+      </div>
+      <div class="tl-step">
+        <b>Позвоните в свой банк</b>
+        <span>Сообщите о переводе и попросите оспорить операцию. С 2024 года банки приостанавливают подозрительные переводы на два дня.</span>
+      </div>
+      <div class="tl-step">
+        <b>Заявление в полицию</b>
+        <span>По телефону 102 или 112, в любом отделении. Мошенничество — статья 159 УК РФ, заявление обязаны принять.</span>
+      </div>
+      <div class="tl-step">
+        <b>Жалоба в Банк России</b>
+        <span>Через интернет-приёмную cbr.ru или по телефону 8 800 300-30-00 — так компания попадает в поле зрения регулятора.</span>
+      </div>
+      <div class="tl-step">
+        <b>Предупредите близких</b>
+        <span>Если схема реферальная, ваши знакомые могут быть следующими. Разговор по честности спасает чьи-то сбережения.</span>
+      </div>
+    </div>
+
+    <h3 class="subhead">Куда обращаться: сохраните эти контакты</h3>
+    <div class="contacts-grid">
+      <div class="contact-card">
+        <div class="contact-card__icon icon-pine"><svg><use href="#i-bank"/></svg></div>
+        <b>8 800 300-30-00</b>
+        <span>Банк России — бесплатно: вопросы о легальности компаний и жалобах на них</span>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon icon-red"><svg><use href="#i-alert"/></svg></div>
+        <b>102 · 112</b>
+        <span>Полиция — заявление о мошенничестве (ст. 159 УК РФ), работает круглосуточно</span>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon icon-copper"><svg><use href="#i-doc"/></svg></div>
+        <b>cbr.ru</b>
+        <span>Реестры лицензий и «Список компаний с признаками нелегальной деятельности»</span>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card__icon icon-green"><svg><use href="#i-info"/></svg></div>
+        <b>fincult.info</b>
+        <span>«Финансовая культура» Банка России — статьи о защите сбережений и правах</span>
+      </div>
+    </div>
+
+    <div class="notice">
+      <svg><use href="#i-info"/></svg>
+      <span>Списки и номера периодически обновляются. Перед печатью памятки сверьте их на официальных ресурсах: cbr.ru, mvd.ru.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ВОПРОСЫ И ОТВЕТЫ ================= -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Вопросы и ответы</span>
+      <h2>Что спрашивают чаще всего</h2>
+    </div>
+
+    <div class="faq">
+      <div class="faq__item">
+        <button class="faq__q" type="button">У компании есть документы и сайт — этого мало?<svg><use href="#i-chevron"/></svg></button>
+        <div class="faq__a"><p>Мало. Красивый сайт и «свидетельства» печатаются за один вечер. Проверяйте только официальные источники: реестры Банка России (cbr.ru) и ЕГРЮЛ. Если компании нет в реестре профессиональных участников — вкладывать нельзя.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button">Почему первые «доходы» реально приходят?<svg><use href="#i-chevron"/></svg></button>
+        <div class="faq__a"><p>Потому что это часть схемы: небольшие выплаты делаются из денег новых участников. Так жертва доверяет и приносит крупную сумму либо приводит друзей. Ранняя «прибыль» — не доказательство честности, а приманка.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button">Куда жаловаться на поддельного «брокера»?<svg><use href="#i-chevron"/></svg></button>
+        <div class="faq__a"><p>Заявление в полицию (102 или в любое отделение) и жалоба в Банк России через интернет-приёмную на cbr.ru или по телефону 8 800 300-30-00. Сохраните скриншоты, чеки и переписку — без доказательств работать сложнее.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button">Можно ли вернуть переведённые деньги?<svg><use href="#i-chevron"/></svg></button>
+        <div class="faq__a"><p>Шансы есть, если действовать быстро: банк может приостановить и оспорить подозрительный перевод, а полиция ищет реквизиты получателей. Но гарантий нет — поэтому главная защита всё-таки профилактика: проверка до перевода.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЧЕК-ЛИСТ ================= -->
+<section class="section section--tint" id="checklist">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Чек-лист</span>
+      <h2>8 правил осторожного инвестора</h2>
+      <p class="lead">Пройдите список перед любым «выгодным предложением». Распечатайте и держите рядом с компьютером.</p>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item"><span class="check-item__n">1</span><div><b>Проверьте компанию в реестре ЦБ</b><span>cbr.ru → реестры и «список предупреждений». Нет в реестре — нет разговора.</span></div></div>
+      <div class="check-item"><span class="check-item__n">2</span><div><b>Не верьте гарантированной доходности</b><span>«30% в месяц без рисков» — формула пирамиды, а не инвестиций.</span></div></div>
+      <div class="check-item"><span class="check-item__n">3</span><div><b>Деньги — только на расчётный счёт</b><span>Переводы физлицам и в криптокошельки «для входа» — красный флаг.</span></div></div>
+      <div class="check-item"><span class="check-item__n">4</span><div><b>Не приводите друзей за бонус</b><span>Реферальная схема работает на деньги новых участников, а не на прибыль.</span></div></div>
+      <div class="check-item"><span class="check-item__n">5</span><div><b>Читайте договор и реквизиты</b><span>Юрлицо, ИНН, адрес, лицензия — всё должно совпадать с реестрами.</span></div></div>
+      <div class="check-item"><span class="check-item__n">6</span><div><b>Спешка — повод остановиться</b><span>«Окно закрывается через час» — приём давления. Настоящие инвестиции не тикают.</span></div></div>
+      <div class="check-item"><span class="check-item__n">7</span><div><b>Начинайте с малых сумм</b><span>И только у лицензированных организаций — через банк или официального брокера.</span></div></div>
+      <div class="check-item"><span class="check-item__n">8</span><div><b>Сомневаетесь — посоветуйтесь</b><span>С близкими или на консультации. Свежий взгляд видит красные флаги быстрее.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНСУЛЬТАНТ И ЗАПИСЬ ================= -->
+<section class="section" id="consult">
+  <div class="container">
+    <div class="consult">
+      <div class="consult__left">
+        <div class="consult__avatar">ЗВ</div>
+        <div>
+          <h3>Зяблецев Владислав Андреевич</h3>
+          <div class="consult__role">Консультант по защите сбережений</div>
+          <div class="consult__role">Студент 2 курса, специальность 09.02.07 «Информационные системы и программирование», группа 25П-1</div>
+        </div>
+        <ul class="consult__list">
+          <li><svg><use href="#i-send"/></svg><span>Telegram: <b>@vladislav</b></span></li>
+          <li><svg><use href="#i-mail"/></svg><span>zyablitsev.consult@mail.ru</span></li>
+          <li><svg><use href="#i-call"/></svg><span>Телефон: +7 (___) ___-__-__</span></li>
+          <li><svg><use href="#i-clock"/></svg><span>Консультации — бесплатно, по договорённости</span></li>
+        </ul>
+        <div class="consult__qr">
+          <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQMAAABAK/OWAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBklEQVR4nO2bTY6DMAyFjViw5Ag5So5Gj8ZReoQuu0B4cGwnYabTzlTqyu+pqkTywerJfwSiDyqzaz+u+CZry71sjbJ6pQrwBjouvZlh0k4zH/TSdvk6CH0zYgEdms4slkrFVYcOS028Flc5rcugQe/NVSX05JOrQIN+mz4082UqNiwJjRk0aKe7nCY0eVqznd8zIOhANLucnuS3jvLT6FMFOi79Ux59hH6wDRr0Szq7AZMZzTxIEsWSLDdrgo5LS5Gz1cKn5q++9mFbPnIa6MD0OpqxSp2zsJlNo09xVf8Q0KBf0rJM5sF+7jOW0U/r0GtkAx2SViWfD9ZJjvZkg5U/c3kI6Lh0c9UgMUYnOewRyeU5DXRYevNi+NEkZ2g3dGYDDfo5rRW1yHYupUPPxZpkgUr+u84LdEyatRiusco6dNa6WW9orgIdkc6bv/4WV2n0UWVuKiWR5jTQUWnJUmwOmmXvoqjVyJUmAg36H7TLlidLaIm1QxdpPw86Nj00V3WNe62R9ejfBjos3UtHwBNXXW2SY5egQf+NznVrtxaLmt+SxSrZ9vkg6Jh0d3aL2hm/3GiidnwLdGA6czsz7KcnmE8Tv75GBg262adAmqXKwFhvBw36LXpha7Ho/CLLl0FHpVXJ3kvx3crklR6ctQAdla6m+f4F1KoPKXvnD6NAg35Of1Bfcv9idZbA2NoAAAAASUVORK5CYII=" alt="QR-код на сайт-памятку ФинРевизор">
+          <div>
+            <b>QR-код на памятку</b>
+            <span>Наведите камеру телефона — откроется этот сайт. Тот же код стоит на визитной карточке.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="consult__right">
+        <h3>Записаться на консультацию</h3>
+        <p>Заполните форму — и я свяжусь с вами, чтобы выбрать удобное время и формат.</p>
+
+        <form class="form" id="form" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input id="f-name" name="name" type="text" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-topic">Тема консультации</label>
+            <select id="f-topic" name="topic">
+              <option>Консультация №1 — проверка компании перед вложением</option>
+              <option>Консультация №2 — если деньги уже переведены</option>
+              <option>Обе темы — полный разбор</option>
+              <option>Другой вопрос</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Коротко о вашей ситуации <span style="font-weight:400">(необязательно)</span></label>
+            <textarea id="f-msg" name="message" placeholder="Например: предлагают 40% в месяц в «закрытом клубе»"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+          <p class="form__hint">Форма работает в демонстрационном режиме и не отправляет данные на сервер. Самый быстрый способ — написать консультанту в Telegram.</p>
+          <div class="form__ok" id="form-ok">
+            <svg><use href="#i-check"/></svg>
+            <span>Спасибо! Заявка сохранена. Для реальной связи напишите консультанту в Telegram <b>@vladislav</b> или позвоните по указанному номеру.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__mark"><svg><use href="#i-logo"/></svg></span>
+          <span class="logo__text">
+            <span class="logo__name">ФинРевизор</span>
+            <span class="logo__sub">сайт-памятка по защите сбережений</span>
+          </span>
+        </div>
+        <p style="margin-top:16px;max-width:340px;font-size:14.5px">
+          Учебный проект по дисциплине «МиТПК» (методика и технология профессионального консультирования).
+          Материалы носят информационно-разъяснительный характер.
+        </p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#about">О проекте</a></li>
+          <li><a href="#scheme">Схема пирамиды</a></li>
+          <li><a href="#flags">Красные флаги</a></li>
+          <li><a href="#protect">Консультация №1</a></li>
+          <li><a href="#incident">Консультация №2</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Консультант</h4>
+        <ul>
+          <li>Зяблецев Владислав Андреевич</li>
+          <li>Группа 25П-1 · специальность 09.02.07</li>
+          <li><a href="https://t.me/vladislav">Telegram: @vladislav</a></li>
+          <li><a href="mailto:zyablitsev.consult@mail.ru">zyablitsev.consult@mail.ru</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 · Учебная практика МиТПК</span>
+      <span>Консультации бесплатны · Не является публичной офертой</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
